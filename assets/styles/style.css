@@ -1,0 +1,290 @@
+/* ============ LOAD JENIS FONT */
+@font-face {
+  font-family: 'Prototype Regular';
+  src: url('../fonts/Prototype.ttf');
+}
+
+@font-face {
+  font-family: 'Avenir Book';
+  src: url('../fonts/Avenir.ttc');
+}
+/* TUTUP LOAD JENIS FONT ============ */
+
+
+/* ============ body & media query */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Avenir Book';
+  color: rgb(93, 93, 93);
+  margin: 0 auto;
+  padding: 10px;
+  /* background-color: rgb(255, 243, 228); */
+  background-color: #FEFCF3;
+  width: 60%;
+}
+
+@media (max-width: 1200px) {
+  body {
+    width: auto;
+  }
+  main {
+    /* width: 100% !important;
+    padding: 0; */
+    flex-direction: column !important;
+  }
+  #content {
+    margin-bottom: 2vh;
+  }
+  .profile {
+    width: 100% !important;
+  }
+  .foto:hover {
+    box-shadow: none !important;
+    transform: none !important;
+  }
+}
+/* TUTUP body & media query ============ */
+
+
+/* ============ JENIS FONT */
+.avenir {
+  font-family: 'Avenir Book';
+}
+
+.prototype {
+  font-family: 'Prototype Regular';
+}
+/* TUTUP JNIS FONT ============ */
+
+
+/* ============ WARNA */
+.base {
+  color: rgb(67, 67, 67);
+}
+
+.primary {
+  /* color: rgb(228, 75, 75); */
+  color: #FB2576;
+}
+
+.secondary {
+  /* color: rgb(130, 59, 181); */
+  color: #62B6B7;
+}
+
+.muted {
+  color: rgb(142, 142, 142);
+}
+/* TUTUP WARNA ============ */
+
+
+/* ============ FONT WEIGHT */
+.bold {
+  font-weight: bolder;
+}
+/* TUTUP FONT WEIGHT ============ */
+
+
+button {
+  cursor: pointer;
+  padding: 15px 25px;
+  font-size: 1.3vh;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  /* background-color: rgba(60, 222, 184, 0.524);
+  box-shadow: 7px -5px 0 rgba(222, 60, 200, 0.26); */
+  background-color: #FB2576;
+  box-shadow: 7px -5px 0 #ffa2c6;
+  transition: all .2s ease;
+}
+button:hover {
+  transform: scale(.9);
+  box-shadow: 2px -1px 0 #ffa2c6;
+}
+
+h1, h2 {
+  padding: 0;
+  margin: 0;
+}
+h2 {
+  padding-bottom: 1vh;
+  display: inline-block;
+  position: relative;
+  /* text-shadow: 2px -3px 0 rgba(63, 222, 60, 0.264); */
+  /* text-shadow: 1px -1px 0 #62B6B7; */
+}
+h2:before {
+  content: "";
+  position: absolute;
+  width: 30%;
+  bottom: 0;
+  left: 0;
+  /* border-bottom: 4px solid rgba(60, 98, 222, 0.563); */
+  border-bottom: 4px solid #FB2576;
+}
+
+
+/* ============ HEADER */
+header {
+  display: block;
+  text-align: center;
+  margin: 5vh 2vh;
+}
+header h1 {
+  font-size: 5vh;
+  margin-bottom: 2vh;
+  transition: all .2s ease;
+  text-shadow: 5px -3px 0 rgba(106, 106, 106, 0.294);
+}
+header h1:hover {
+  transform: translateY(-2vh);
+}
+header nav {
+  font-size: 2vh;
+  border-radius: 7px;
+  /* border: 3px solid rgba(61, 61, 61, 0.563); */
+  border: 3px solid #624F82;
+  box-shadow: 7px -5px 0 #624F82;
+  /* box-shadow: 7px -5px 0 rgba(222, 60, 200, 0.563); */
+}
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+header nav ul li {
+  display: inline;
+  margin-left: 2vh;
+}
+header nav ul li > a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all .3s ease;
+  padding: 10px;
+  border-radius: 20px;
+  /* text-shadow: 3px -2px 0 rgba(232, 108, 63, 0.337); */
+  /* text-shadow: 2px -2px 0 #c7c7c7; */
+}
+header nav ul li > a:hover,
+header nav ul li > a:focus {
+  text-decoration: none;
+  background-color: #624F82;
+  color: #FEFCF3;
+  border-radius: 20px;
+}
+/* TUTUP HEADER ============ */
+
+
+/* ============ MAIN */
+main {
+  margin: 2vh;
+  display: flex;
+  flex-direction: row;
+}
+
+main #content {
+  width: 100%;
+  padding: 20px;
+  margin-right: 3vh;
+  border-radius: 5px;
+  border: 3px solid #624F82;
+  /* box-shadow: 7px -5px 0 rgba(60, 98, 222, 0.563); */
+  box-shadow: 7px -5px 0 #624F82;
+}
+main #content article p {
+  font-size: 17px;
+  text-align: justify;
+}
+main #content #form {
+  margin-top: 2vh;
+}
+main #contact ul {
+  padding-left: 0;
+  list-style: none;
+}
+main #contact #form .form {
+  margin-bottom: 1.5vh;
+}
+main #contact #form .form .form-input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  color: rgb(93, 93, 93);
+  font-family: 'Avenir Book';
+  border-radius: 7px;
+  /* background-color: rgba(255, 255, 255, 0.214); */
+  border: 3px solid rgba(167, 167, 167, 0.563);
+  transition: all .2s ease;
+}
+main #contact #form .form .form-input:hover,
+main #contact #form .form .form-input:focus {
+  border-color: #FB2576;
+  /* background-color: rgba(255, 255, 255, 0.516); */
+  outline: none;
+}
+main aside .profile {
+  width: 20vh;
+  text-align: center;
+  border-radius: 5px;
+  padding-bottom: 15px;
+  border: 3px solid #624F82;
+  /* box-shadow: 7px -5px 0 rgba(222, 60, 60, 0.563); */
+  box-shadow: 7px -5px 0 #624F82;
+}
+main aside .profile .foto {
+  width: 100%;
+  border-radius: 5px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  transition: all .2s ease;
+  /* border: 5px solid rgba(61, 61, 61, 0.563); */
+}
+main aside .profile .foto:hover {
+  border: none;
+  border-radius: 5px;
+  transform: scale(2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.339);
+}
+main aside .profile .name {
+  font-size: 2.5vh;
+  padding: 10px 0 0;
+  /* text-shadow: 3px -2px 0 rgba(222, 203, 60, 0.264); */
+}
+/* TUTUP MAIN ============ */
+
+
+/* ============ FOOTER */
+footer {
+  padding: 2vh;
+  text-align: center;
+  margin: 5vh 2vh 0 2vh;
+  border-radius: 7px;
+  border-top: 2px solid rgb(132, 132, 132);
+  border: 3px solid #624F82;
+  /* box-shadow: 7px -5px 0 rgba(60, 222, 119, 0.563); */
+  box-shadow: 7px -5px 0 #624F82;
+}
+/* TUTUP FOOTER ============ */
+
+/* BONUS: DARK MODE :D */
+.toggle {
+  position: relative;
+}
+.toggle #dark-mode {
+  position: absolute;
+  top: -6vh;
+  right: -1.5vh;
+  color: #fff;
+  font-size: 2.5vh;
+  box-shadow: none;
+  border-radius: 50%;
+  background-color: transparent;
+}
+header .toggle #dark-mode:hover {
+  transform: none;
+}

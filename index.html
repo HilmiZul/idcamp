@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="personal site. tugas akhir dicoding academy. teacher idcamp.">
+  
+  <title>zulhilmi.</title>
+
+  <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+<body>
+  <header class="prototype">
+    <h1>zulhilmi.<span class="primary">ID</span></h1>
+    <div class="toggle">
+      <button id="dark-mode" onclick="darkMode()"></button>
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <a onclick="intro()">🙋🏻‍♂️ HILLOW</a>
+        </li>
+        <li>
+          <a onclick="about()">👨🏻‍💻 ABOUT</a>
+        </li>
+        <li>
+          <a onclick="contact()">💌 CONTACT</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- content -->
+    <div id="content">
+      <article id="intro">
+        <h2 class="prototype">Hillow!</h2>
+        <p>
+          Saya Zul Hilmi.
+        </p>
+        <p>
+          Saat ini sedang mengerjakan tugas akhir dari Dicoding Academy dalam
+          rangka mengikuti IDCamp Teacher. Inilah hasil dan implementasi selama mengikuti
+          Camp di hari ke-8.
+        </p>
+      </article>
+
+      <article id="about">
+        <h2 class="prototype">Who am I?</h2>
+        <p>
+          My name is <span class="prototype">Zul Hilmi</span>. I was born in Indonesia. I’m an instructor who teach computer scince. 
+        </p>
+        <p>
+          I would like to contribute for educational content. And I create random videos about programming on YouTube.
+        </p>
+        <p>
+          I 💜 teaching and joking.
+        </p>
+      </article>
+      
+      <article id="contact">
+        <h2 class="prototype">Contact & follow me</h2>
+        <ul>
+          <li>Twitter @hilmi_zul</li>
+          <li>YouTube @hilmizul</li>
+          <li>Mail hillow@zulhilmi.id</li>
+        </ul>
+        <form id="form">
+          <div class="form">
+            <input onkeyup="inputNama(event)" type="text" class="form-input" placeholder="nama lengkap" required>
+          </div>
+          <div class="form">
+            <input type="email" class="form-input" placeholder="email" required>
+          </div>
+          <div class="form">
+            <input type="subyek" class="form-input" placeholder="subyek" required>
+          </div>
+          <div class="form">
+            <textarea class="form-input" rows="5" placeholder="tulis pesan disini" required></textarea>
+          </div>
+          <button>KIRIM</button>
+        </form>
+      </article>
+    </div>
+
+    <!-- aside -->
+    <aside>
+      <div class="profile">
+        <img src="./assets/img/profile.jpeg" class="foto" alt="foto profile">
+        <div class="name prototype">Zul Hilmi</div>
+        <div><em>Instructor</em></div>
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    &copy; <span id="footer-year"></span>. <span id="profile-id"></span>
+  </footer>
+
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
